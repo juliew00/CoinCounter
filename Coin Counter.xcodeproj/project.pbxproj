@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA27230B21E6F0920069D73D /* EndGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA27230A21E6F0920069D73D /* EndGameScene.swift */; };
+		CA383CD821E5613900E2639B /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA383CD721E5613900E2639B /* MainScreenViewController.swift */; };
+		CAF402EF21E473CF00368A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF402EE21E473CF00368A57 /* AppDelegate.swift */; };
+		CAF402F121E473CF00368A57 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAF402F021E473CF00368A57 /* GameScene.sks */; };
+		CAF402F321E473CF00368A57 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAF402F221E473CF00368A57 /* Actions.sks */; };
+		CAF402F521E473CF00368A57 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF402F421E473CF00368A57 /* GameScene.swift */; };
+		CAF402F721E473CF00368A57 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF402F621E473CF00368A57 /* GameViewController.swift */; };
+		CAF402FA21E473CF00368A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF402F821E473CF00368A57 /* Main.storyboard */; };
+		CAF402FC21E473D200368A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF402FB21E473D200368A57 /* Assets.xcassets */; };
+		CAF402FF21E473D200368A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF402FD21E473D200368A57 /* LaunchScreen.storyboard */; };
+		CAF4030A21E473D300368A57 /* Coin_CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF4030921E473D300368A57 /* Coin_CounterTests.swift */; };
+		CAF4031521E473D300368A57 /* Coin_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF4031421E473D300368A57 /* Coin_CounterUITests.swift */; };
+		CAF4032321E4FD0500368A57 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF4032221E4FD0500368A57 /* Items.swift */; };
+		CAF4032521E4FF6F00368A57 /* CoinCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF4032421E4FF6F00368A57 /* CoinCounter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAF4030621E473D300368A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAF402E321E473CE00368A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAF402EA21E473CE00368A57;
+			remoteInfo = "Coin Counter";
+		};
+		CAF4031121E473D300368A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAF402E321E473CE00368A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAF402EA21E473CE00368A57;
+			remoteInfo = "Coin Counter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA27230A21E6F0920069D73D /* EndGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameScene.swift; sourceTree = "<group>"; };
+		CA383CD721E5613900E2639B /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainScreenViewController.swift; path = ../MainScreenViewController.swift; sourceTree = "<group>"; };
+		CAF402EB21E473CF00368A57 /* Coin Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coin Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF402EE21E473CF00368A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAF402F021E473CF00368A57 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CAF402F221E473CF00368A57 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		CAF402F421E473CF00368A57 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CAF402F621E473CF00368A57 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CAF402F921E473CF00368A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAF402FB21E473D200368A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAF402FE21E473D200368A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAF4030021E473D200368A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAF4030521E473D300368A57 /* Coin CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coin CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF4030921E473D300368A57 /* Coin_CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin_CounterTests.swift; sourceTree = "<group>"; };
+		CAF4030B21E473D300368A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAF4031021E473D300368A57 /* Coin CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coin CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF4031421E473D300368A57 /* Coin_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin_CounterUITests.swift; sourceTree = "<group>"; };
+		CAF4031621E473D300368A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAF4032221E4FD0500368A57 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		CAF4032421E4FF6F00368A57 /* CoinCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCounter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAF402E821E473CE00368A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF4030221E473D300368A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF4030D21E473D300368A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAF402E221E473CE00368A57 = {
+			isa = PBXGroup;
+			children = (
+				CAF402ED21E473CF00368A57 /* Coin Counter */,
+				CAF4030821E473D300368A57 /* Coin CounterTests */,
+				CAF4031321E473D300368A57 /* Coin CounterUITests */,
+				CAF402EC21E473CF00368A57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAF402EC21E473CF00368A57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAF402EB21E473CF00368A57 /* Coin Counter.app */,
+				CAF4030521E473D300368A57 /* Coin CounterTests.xctest */,
+				CAF4031021E473D300368A57 /* Coin CounterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAF402ED21E473CF00368A57 /* Coin Counter */ = {
+			isa = PBXGroup;
+			children = (
+				CAF402F621E473CF00368A57 /* GameViewController.swift */,
+				CAF402F421E473CF00368A57 /* GameScene.swift */,
+				CA27230A21E6F0920069D73D /* EndGameScene.swift */,
+				CA383CD721E5613900E2639B /* MainScreenViewController.swift */,
+				CAF402EE21E473CF00368A57 /* AppDelegate.swift */,
+				CAF402F021E473CF00368A57 /* GameScene.sks */,
+				CAF402F221E473CF00368A57 /* Actions.sks */,
+				CAF402F821E473CF00368A57 /* Main.storyboard */,
+				CAF402FB21E473D200368A57 /* Assets.xcassets */,
+				CAF402FD21E473D200368A57 /* LaunchScreen.storyboard */,
+				CAF4030021E473D200368A57 /* Info.plist */,
+				CAF4032221E4FD0500368A57 /* Items.swift */,
+				CAF4032421E4FF6F00368A57 /* CoinCounter.swift */,
+			);
+			path = "Coin Counter";
+			sourceTree = "<group>";
+		};
+		CAF4030821E473D300368A57 /* Coin CounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAF4030921E473D300368A57 /* Coin_CounterTests.swift */,
+				CAF4030B21E473D300368A57 /* Info.plist */,
+			);
+			path = "Coin CounterTests";
+			sourceTree = "<group>";
+		};
+		CAF4031321E473D300368A57 /* Coin CounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAF4031421E473D300368A57 /* Coin_CounterUITests.swift */,
+				CAF4031621E473D300368A57 /* Info.plist */,
+			);
+			path = "Coin CounterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAF402EA21E473CE00368A57 /* Coin Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAF4031921E473D300368A57 /* Build configuration list for PBXNativeTarget "Coin Counter" */;
+			buildPhases = (
+				CAF402E721E473CE00368A57 /* Sources */,
+				CAF402E821E473CE00368A57 /* Frameworks */,
+				CAF402E921E473CE00368A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coin Counter";
+			productName = "Coin Counter";
+			productReference = CAF402EB21E473CF00368A57 /* Coin Counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAF4030421E473D300368A57 /* Coin CounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAF4031C21E473D300368A57 /* Build configuration list for PBXNativeTarget "Coin CounterTests" */;
+			buildPhases = (
+				CAF4030121E473D300368A57 /* Sources */,
+				CAF4030221E473D300368A57 /* Frameworks */,
+				CAF4030321E473D300368A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAF4030721E473D300368A57 /* PBXTargetDependency */,
+			);
+			name = "Coin CounterTests";
+			productName = "Coin CounterTests";
+			productReference = CAF4030521E473D300368A57 /* Coin CounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAF4030F21E473D300368A57 /* Coin CounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAF4031F21E473D300368A57 /* Build configuration list for PBXNativeTarget "Coin CounterUITests" */;
+			buildPhases = (
+				CAF4030C21E473D300368A57 /* Sources */,
+				CAF4030D21E473D300368A57 /* Frameworks */,
+				CAF4030E21E473D300368A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAF4031221E473D300368A57 /* PBXTargetDependency */,
+			);
+			name = "Coin CounterUITests";
+			productName = "Coin CounterUITests";
+			productReference = CAF4031021E473D300368A57 /* Coin CounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAF402E321E473CE00368A57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Julie Wu";
+				TargetAttributes = {
+					CAF402EA21E473CE00368A57 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CAF4030421E473D300368A57 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CAF402EA21E473CE00368A57;
+					};
+					CAF4030F21E473D300368A57 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CAF402EA21E473CE00368A57;
+					};
+				};
+			};
+			buildConfigurationList = CAF402E621E473CE00368A57 /* Build configuration list for PBXProject "Coin Counter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAF402E221E473CE00368A57;
+			productRefGroup = CAF402EC21E473CF00368A57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAF402EA21E473CE00368A57 /* Coin Counter */,
+				CAF4030421E473D300368A57 /* Coin CounterTests */,
+				CAF4030F21E473D300368A57 /* Coin CounterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAF402E921E473CE00368A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF402FA21E473CF00368A57 /* Main.storyboard in Resources */,
+				CAF402F121E473CF00368A57 /* GameScene.sks in Resources */,
+				CAF402FC21E473D200368A57 /* Assets.xcassets in Resources */,
+				CAF402FF21E473D200368A57 /* LaunchScreen.storyboard in Resources */,
+				CAF402F321E473CF00368A57 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF4030321E473D300368A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF4030E21E473D300368A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAF402E721E473CE00368A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA383CD821E5613900E2639B /* MainScreenViewController.swift in Sources */,
+				CAF4032321E4FD0500368A57 /* Items.swift in Sources */,
+				CA27230B21E6F0920069D73D /* EndGameScene.swift in Sources */,
+				CAF402F521E473CF00368A57 /* GameScene.swift in Sources */,
+				CAF402F721E473CF00368A57 /* GameViewController.swift in Sources */,
+				CAF4032521E4FF6F00368A57 /* CoinCounter.swift in Sources */,
+				CAF402EF21E473CF00368A57 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF4030121E473D300368A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF4030A21E473D300368A57 /* Coin_CounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF4030C21E473D300368A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF4031521E473D300368A57 /* Coin_CounterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAF4030721E473D300368A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAF402EA21E473CE00368A57 /* Coin Counter */;
+			targetProxy = CAF4030621E473D300368A57 /* PBXContainerItemProxy */;
+		};
+		CAF4031221E473D300368A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAF402EA21E473CE00368A57 /* Coin Counter */;
+			targetProxy = CAF4031121E473D300368A57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAF402F821E473CF00368A57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAF402F921E473CF00368A57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAF402FD21E473D200368A57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAF402FE21E473D200368A57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAF4031721E473D300368A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAF4031821E473D300368A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAF4031A21E473D300368A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coin Counter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Julie-Wu.Coin-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAF4031B21E473D300368A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coin Counter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Julie-Wu.Coin-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAF4031D21E473D300368A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coin CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Julie-Wu.Coin-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coin Counter.app/Coin Counter";
+			};
+			name = Debug;
+		};
+		CAF4031E21E473D300368A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coin CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Julie-Wu.Coin-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coin Counter.app/Coin Counter";
+			};
+			name = Release;
+		};
+		CAF4032021E473D300368A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coin CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Julie-Wu.Coin-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coin Counter";
+			};
+			name = Debug;
+		};
+		CAF4032121E473D300368A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coin CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Julie-Wu.Coin-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coin Counter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAF402E621E473CE00368A57 /* Build configuration list for PBXProject "Coin Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAF4031721E473D300368A57 /* Debug */,
+				CAF4031821E473D300368A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAF4031921E473D300368A57 /* Build configuration list for PBXNativeTarget "Coin Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAF4031A21E473D300368A57 /* Debug */,
+				CAF4031B21E473D300368A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAF4031C21E473D300368A57 /* Build configuration list for PBXNativeTarget "Coin CounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAF4031D21E473D300368A57 /* Debug */,
+				CAF4031E21E473D300368A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAF4031F21E473D300368A57 /* Build configuration list for PBXNativeTarget "Coin CounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAF4032021E473D300368A57 /* Debug */,
+				CAF4032121E473D300368A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAF402E321E473CE00368A57 /* Project object */;
+}
