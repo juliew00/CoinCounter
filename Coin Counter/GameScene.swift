@@ -66,6 +66,8 @@ class GameScene: SKScene {
         inputBox.textColor = .black
         inputBox.backgroundColor = .white
         inputBox.keyboardType = UIKeyboardType.decimalPad
+        inputBox.layer.cornerRadius = 5
+        inputBox.textAlignment = .center
         self.view?.addSubview(inputBox)
         
         // Enter Button
@@ -75,7 +77,8 @@ class GameScene: SKScene {
         enterButton.setTitle("Enter", for: .normal)
         enterButton.setTitleColor(UIColor .black, for: .normal)
         enterButton.addTarget(self, action: #selector(EnterButtonAction), for: .touchUpInside)
-        enterButton.titleLabel?.font = UIFont(name: "PingFang HK", size: 24)
+        enterButton.titleLabel?.font = UIFont(name: "PingFang HK", size: 18)
+        enterButton.layer.cornerRadius = 5
         self.view?.addSubview(enterButton)
         
         // Correct Label
@@ -96,8 +99,11 @@ class GameScene: SKScene {
         nextButton.setTitle("Next", for: .normal)
         nextButton.setTitleColor(UIColor .black, for: .normal)
         nextButton.addTarget(self, action: #selector(NextButtonAction), for: .touchUpInside)
-        nextButton.titleLabel?.font = UIFont(name: "PingFang HK", size: 24)
+        nextButton.titleLabel?.font = UIFont(name: "PingFang HK", size: 18)
+        nextButton.layer.cornerRadius = 5
         self.view?.addSubview(nextButton)
+        
+        score = 0.00
         
         // Start first round
         SpawnCoins()
@@ -112,7 +118,7 @@ class GameScene: SKScene {
         inputBox.isHidden = false
         
         enterButton.isHidden = false
-
+        
     }
     
     // When the enter button is clicked
@@ -128,7 +134,7 @@ class GameScene: SKScene {
             
             // Correct Answer, move onto next round
             score += roundAnswer
-            score2 = score
+            score = (Double(round(100*score)/100))
             currentRoundNumber += 1
             inputBox.isHidden = true
             enterButton.isHidden = true
@@ -144,15 +150,17 @@ class GameScene: SKScene {
             nextButton.isHidden = true
             inputBox.text = ""
             // Game is over
+            // store score in global score variable
+            score2 = score
             // go to EndGame Scene
             let sceneToMove = EndGameScene()
             self.view!.presentScene(sceneToMove)
-        
+            
             
         }
         
     }
-
+    
     // When next button is pressed
     @objc func NextButtonAction(sender: UIButton!) {
         SpawnCoins()
@@ -169,10 +177,20 @@ class GameScene: SKScene {
         inputBox.text = ""
         
         // Create new round and spawn coins
+        // Make round
+        var ti: Double! = 1.5
+        if (currentRoundNumber > 3) {
+            ti = 2
+        }
+        
         currentRound = Round(roundNumber: currentRoundNumber)
+        
+        let delayTime: Double! = Double(currentRound.coins.count)*ti + 15
+        
         roundAnswer = (Double(round(100*currentRound.answer)/100))
-        gameTimer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(addCoin), userInfo: nil, repeats: true)
-        delayWithSeconds(Double(currentRound.coins.count*2)) {
+        gameTimer = Timer.scheduledTimer(timeInterval: ti, target: self, selector: #selector(addCoin), userInfo: nil, repeats: true)
+        delayWithSeconds(delayTime) {
+            self.gameTimer.invalidate()
             self.AskInput()
         }
     }
